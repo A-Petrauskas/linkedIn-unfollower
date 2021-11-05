@@ -1,6 +1,7 @@
 let userCards = document.querySelectorAll(".follows-recommendation-card");
 
-const targetTags = ["lion", "l.i.o.n", "open networker", "open-networker"];
+//Change the tags here
+const targetTags = ["lion", "l.i.o.n", "open networker", "open-networker", "open linkedin networker", "open to networking", "lets connect"];
 
 let count = 0;
 userCards.forEach(function (userCard) {
@@ -13,4 +14,11 @@ userCards.forEach(function (userCard) {
     }
 });
 
-alert("Unfollowing " + count + " users");
+if (count == 0)
+    alert("Failed to find users with given tags");
+
+else if (count.toString().includes("1"))
+    alert("Unfollowing " + count + " user");
+
+else 
+    alert("Unfollowing " + count + " user");
