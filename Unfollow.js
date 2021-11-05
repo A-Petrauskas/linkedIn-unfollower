@@ -21,4 +21,4 @@ else if (count.toString().includes("1"))
     alert("Unfollowing " + count + " user");
 
 else 
-    alert("Unfollowing " + count + " user");
+    alert("Unfollowing " + count + " users");
